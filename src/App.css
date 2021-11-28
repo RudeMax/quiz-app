@@ -1,38 +1,148 @@
 .App {
+  font-family: "Roboto", sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 77%,
+    rgba(254, 107, 139, 0.7875525210084033) 94%,
+    rgba(255, 142, 83, 0.8379726890756303) 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
+.login-page h2 {
+  color: #666;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logotype {
+  font-size: 60px;
+  font-family: "Russo One", sans-serif;
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.start-quiz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50px;
+}
+
+.roules-wrap {
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.roules {
+  font-size: 18px;
+  color: #666;
+  text-align: left;
+  background-color: white;
+  padding: 15px 30px;
+  max-width: 800px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.roules li {
+  margin: 15px;
+}
+
+.roules span {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.option-card {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.option-card button {
+  width: 47%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  color: #444;
+  font-size: 20px;
+}
+
+.question-box {
+  border: solid #888 1px;
+  border-radius: 10px;
+  width: 90vw;
+}
+
+.question-box p {
+  color: #444;
+}
+
+.timer {
+  text-shadow: 1px 2px 2px #444;
+  font-family: "Russo One", sans-serif;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+
+  70% {
+    transform: scale(0.9);
   }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.first {
+  width: 80px;
+}
+
+.second {
+  width: 70px;
+}
+
+.third {
+  width: 60px;
+}
+
+.leaders-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.place {
+  margin: auto;
+  margin-top: 20px;
+  color: rgba(75, 11, 75, 0.788);
+  background-color: #fe6b8b;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: rgba(75, 11, 75, 0.788) solid 5px;
 }

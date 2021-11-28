@@ -1,0 +1,12 @@
+export const LOGIN_USER = "LOGIN_USER";
+export const LOGOUT_USER = "LOGOUT_USER";
+
+export const FETCH_QUIZ_REQUEST = "FETCH_QUIZ_REQUEST";
+export const FETCH_QUIZ_SUCCESS = "FETCH_QUIZ_SUCCESS";
+export const FETCH_QUIZ_FAILURE = "FETCH_QUIZ_FAILURE";
+
+export const SET_RESULT = "SET_RESULT";
+export const SET_CHART = "SET_CHART";
+export const UPDATE_RESULT = "UPDATE_RESULT";
+
+export const REFRESH_QUIZ = "REFRESH_QUIZ";
