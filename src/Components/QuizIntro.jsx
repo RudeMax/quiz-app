@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
 import React from "react";
-import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 function QuizIntro() {
@@ -22,8 +21,8 @@ function QuizIntro() {
             For each question you have only <span>15</span> seconds.
           </li>
           <li>
-            Each question can gice you up to 15 points. The faster you answer,
-            the more points you get
+            Each question can give you up to 15000 points. The faster you
+            answer, the more points you get
           </li>
           <li>
             If you don't answer within 15 seconds, you answer will be considered
@@ -49,5 +48,3 @@ function QuizIntro() {
 }
 
 export default QuizIntro;
-
-// useSelector((state) => state.login.currentUser)

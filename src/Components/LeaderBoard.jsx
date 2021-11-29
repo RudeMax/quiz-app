@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "@mui/material";
 import { refreshQuiz } from "../Redux/Actions";
+import Results from "./Results";
 
 function LeaderBoard() {
   const dispatch = useDispatch();
@@ -82,3 +83,4 @@ function LeaderBoard() {
 }
 
 export default LeaderBoard;
+

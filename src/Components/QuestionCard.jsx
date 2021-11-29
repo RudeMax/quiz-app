@@ -87,7 +87,7 @@ function QuestionCard() {
             height: "5px",
             margin: "auto",
             marginBottom: "10px",
-            transition: "0.8s",
+            transition: "1s linear",
             background:
               timer > 10
                 ? "#66bb6a"
